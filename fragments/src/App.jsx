@@ -6,11 +6,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 function App() {
-  let foodItems = [];
+  let foodItems = ["dal", "roti", "milk", "makhan"];
 
   return (
     <>
-      <h1>Food item</h1>
+      <h1 className="food-heading">Food item</h1>
       <FoodItems items={foodItems}></FoodItems>
       <ErrorMessage items={foodItems}></ErrorMessage>
     </>
