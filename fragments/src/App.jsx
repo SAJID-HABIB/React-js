@@ -5,20 +5,14 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
-
+  // const [count, setCount] = useState(0);
+  let foodItems = ["dal", "roti", "sabzi", "salad", "milk", "makhan"];
+  // let foodItems = [];
   return (
     <>
       <h1>Food item</h1>
-      <ul className="list-group">
-        <li className="list-group-item active" aria-current="true">
-          An active item
-        </li>
-        <li className="list-group-item">A second item</li>
-        <li className="list-group-item">A third item</li>
-        <li className="list-group-item">A fourth item</li>
-        <li className="list-group-item">And a fifth one</li>
-      </ul>
+      {foodItems.length === 0 && <h3>i am stil hungry</h3>}
+      <FoodItems></FoodItems>
     </>
   );
 }
